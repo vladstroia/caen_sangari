@@ -1,4 +1,13 @@
 \documentclass{article}
+% \usepackage[landscape]{geometry}
+\usepackage[a4paper,landscape, top=20mm,
+ total={260mm, 210mm}]{geometry}
+
+\usepackage{color}
+\setlength{\columnseprule}{1pt}
+\def\columnseprulecolor{\color{blue}}
+\usepackage{blindtext}
+\usepackage{multicol}
 \usepackage[utf8]{inputenc}
 
 \title{CAEN Sangari}
@@ -9,10 +18,15 @@
 
 \maketitle
 
+  \blindtext
+\pagebreak{4}
+\begin{multicols}{3}
+\columnbreak
+  % \pagebreak{4}
 \section*{CAEN 7112 Activitati de inginerie si consultanta tehnica legate de acestea}
 \subsection*{Această clasă include:}
-\begin{itemize}
 Activitati de inginerie (adica aplicarea legilor fizice si a principiilor de inginerie în proiectarea masinilor, materialelor, instrumentelor, structurilor, proceselor si sistemelor) si activitati de consultanta pentru:
+\begin{itemize}
 \item utilaje, procese industriale si instalatii industriale
 \item realizarea de proiecte privind ingineria civila, hidraulica si de trafic
 \item proiecte de gospodarire a apelor
@@ -39,6 +53,20 @@ Activitati de inginerie (adica aplicarea legilor fizice si a principiilor de ing
 \end{itemize}
 
 
+\section*{CAEN 8560 Activitati de servicii suport pentru învatamânt}
+\subsection*{Această clasă include:}
+Aceasta clasa include asigurarea de activitati altele decât cele de învatamânt, care sunt destinate sustinerii proceselor sau sistemelor de învatamânt:
+\begin{itemize}
+\item consultanta în probleme de învatamânt
+\item activitati de consiliere si îndrumare în învatamânt
+\item activitati de evaluare a testelor
+\item activitati de testare în învatamânt
+\item organizarea programelor privind schimbul de studenti
+\end{itemize}
+\subsection*{Această clasă exclude:}
+\begin{itemize}
+  \item    cercetarea si dezvoltarea experimentala în stiinte sociale si umaniste, vezi cod CAEN 7220
+\end{itemize}
 
 \section*{CAEN 8559 Alte forme de învatamânt n.c.a.}
 \subsection*{Această clasă include:}
@@ -50,15 +78,12 @@ Activitati de inginerie (adica aplicarea legilor fizice si a principiilor de ing
 \item pregatirea în domeniul limbilor straine si al dobândirii abilitatilor de conversatie
 \item instruirea în domeniul calculatoarelor
 \item instruire de religie
-
 Aceasta clasa include de asemenea:
 \item pregatirea salvamarilor si a salvamontistilor
 \item instruirea în metode de supravietuire
 \item instruirea în oratorie
 \item instruirea în citire rapida, citire inversa, etc.
 \end{itemize}
-
-
 \subsection*{Această clasă exclude:}
 \begin{itemize}
 \item programe de alfabetizare pentru adulti, vezi cod CAEN 8520
@@ -67,33 +92,11 @@ Aceasta clasa include de asemenea:
 \item învatamântul superior, vezi grupa 854
 \end{itemize}
 
-\section*{CAEN 8560 Activitati de servicii suport pentru învatamânt}
-\subsection*{Această clasă include:}
-\begin{itemize}
-\item învatamântul care nu poate fi încadrat într-unul din clasele CAEN 8510 8553
-\item servicii ale conducatorilor academici
-\item centre de învatamânt ce ofera cursuri terapeutice
-\item cursuri de verificare a cunostintelor profesionale
-\item pregatirea în domeniul limbilor straine si al dobândirii abilitatilor de conversatie
-\item instruirea în domeniul calculatoarelor
-\item instruire de religie
-
-Aceasta clasa include de asemenea:
-\item pregatirea salvamarilor si a salvamontistilor
-\item instruirea în metode de supravietuire
-\item instruirea în oratorie
-\item instruirea în citire rapida, citire inversa, etc.
-\end{itemize}
 
 
-\subsection*{Această clasă exclude:}
-\begin{itemize}
-\item programe de alfabetizare pentru adulti, vezi cod CAEN 8520
-\item învatamântul secundar general, vezi cod CAEN 8531
-\item învatamântul secundar tehnic si profesional, vezi cod CAEN 8532
-\item învatamântul superior, vezi grupa 854
-\end{itemize}
 
+
+\end{multicols}
 
 
 \end{document}
